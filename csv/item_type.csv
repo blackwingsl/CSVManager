@@ -1,0 +1,9 @@
+#道具类型对应显示中文
+#!type,name
+weapon,武器
+armor,防具
+accessory,饰品
+potion,药品装备
+gift,消耗道具（礼包
+material,材料
+mercenary,给佣兵使用的道具

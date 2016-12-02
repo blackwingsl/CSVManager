@@ -1,0 +1,10 @@
+﻿﻿#事件指令表,,,
+#!id,name,value,desc
+#int,string,string,string
+#事件条件-参数,,,
+12001,MORE_THAN,MORE_THAN,大于
+12002,LESS_THAN,LESS_THAN,小于
+12003,EQUAL,EQUAL,等于
+#事件类型,,,
+13001,EVENT_BATTLE,EVENT_BATTLE,战斗
+13002,EVENT_SCRIPT,EVENT_SCRIPT,脚本

@@ -1,0 +1,5 @@
+#编号,名称（备注）,关键字(后端用),开始时间(yyyymmddhhmm),持续时间(分),周期时间(分),图标,标题图标
+#!id,name,key,start_time,last_time,cycle_time,icon,titleimg
+#@int,string,string,int,int,int,string,string
+1,战斗力,BATTLEPOWER,201406030000,10080,10080,UIImages/战斗力文字,UIImages/战斗力排行
+2,金币,GOLD,201406030000,10080,10080,Images/Icon/金币,UIImages/财富排行

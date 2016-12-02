@@ -1,0 +1,100 @@
+#!key,value
+#!string,string
+Day,天
+Hour,小时
+Minute,分钟
+Second,秒
+CapacityAddedPositive,<color=#BCE354> +{0}</color>
+CapacityAddedZero,<color=#FFFFFF> +{0}</color>
+Red,<color=#FF0000>{0}</color>
+MercenaryCapacity,佣兵容量
+WarehouseCapacity,仓库容量
+FriendCapacity,好友上限
+BpCapacity,体力上限
+Play,播放
+Pause,暂停
+Gold,金币
+Diamond,钻石
+UpgradeToUnlock,请升级解锁额外工位
+WorkTimeLonger,打工时间延长
+WorkTimeShorter,打工时间缩短
+FinishTaskToUnlock,需要完成任务，才能解锁。
+NoAvailableBuilding,女神正在研制新的楼层蓝图中……
+NoBuildHeal,勇士您现在还没有扩建医疗所哦~
+BuildingListDescription,楼层越高，建筑费用越大\n本次建筑费用：{0}
+BuildableNum,可建：{0}
+VolumnAvatarTip,扩建楼层可以增加化身的栏位哦！
+TitleAvatar,化身
+ShareSucceed,分享成功
+ShareFailed,分享失败
+ShareNetworkError,网络发生错误
+AdsNotReady,广告尚未准备好
+AdsCooldown,广告冷却中
+AdsEarnDiamond,看广告 得钻石
+AdsEarnGold,看广告 得金币
+AdsEarnBp,看广告 回体力
+AlreadyComplete,已经完成了
+NotEnoughGold,金币不足
+NotEnoughDiamond,钻石不足
+NotEnoughBP,体力不足
+ModuleOpen,模块开启
+UnknowMercenary,随机佣兵*1
+#公会战索敌界面,
+EnemySearchViewTitle,索敌
+EnemySearchViewSearch,重新搜寻
+EnemySearchInfoNoFound,没有符合条件的对手
+EnemySearchInfoRankLv,Rank
+EnemySearchInfoHp,HP
+DeleteMailConfirmMessage,"有附件未领取，是否确认删除邮件？"
+#一键收益,
+TodayFreeCount,今日免费次数：
+Populate,人
+#增筑界面,
+AddFloorTip,仅11层及以上楼层，才能使用图纸进行扩建或改建
+#奖励类型说明
+BONUS_UNKNOW,未知的奖励
+BONUS_GOLD,获得金币
+BONUS_DIAMOND,获得钻石
+BONUS_BUILDING,获得建筑
+BONUS_MERCENARY,获得佣兵或佣兵相关升级
+BONUS_ITEM,获得新道具
+BONUS_MERCENARYXP,获得佣兵经验
+BONUS_SKILL,获得技能
+BONUS_FEAT,获得特长
+BONUS_ITEMRECIPE,获得道具配方
+BONUS_GOLD_FLOOR,获得金币来自楼层
+BONUS_DIAMOND_FLOOR,获得钻石来自楼层
+BONUS_BATTLEPOINT,获取体力
+BONUS_ITEMMAX,增加仓库容量
+BONUS_MERCENARYMAX,增加佣兵容量
+BONUS_COLLECTION,获得图鉴
+BONUS_MODULE_SWITCH,获取模块开启
+BONUS_LIBRARY_PAGE,获取新的图书碎片
+NoJoin,未参与
+NoData,没有数据
+WorldBossExplain,活动期间，全服玩家可以一起参与攻击BOSS的活动中，看看谁的攻击伤害最高，获得的奖励也就越丰富。\n每次攻击都需要扣除1点体力。\n进入攻击阶段，可以在限定时间内，连续不断地对BOSS进行攻击。\n活动期间，每一次的攻击伤害都会进行累积。\n活动结束后，奖励会自动下发到邮箱，要注意查收哦。
+JoinGuildSucceed,加入工会成功
+GuildExplain,公会信息\n\n公会名称\n当前人数\nRank：工会阶级，阶级越高 -> 探险和研究的内容越多、质量越高。\n公会排名：有公会经验就会有公会排名，工会经验可从探险、公会战中获得积累\nXP：当前工会阶级经验百分比{xp}/{xp_lvup}\n----------------------------------\n公会公告只有会长才可以编辑修改\n----------------------------------\n个人信息\n\n个人昵称\n个人贡献值\n个人于公会的排名
+GuildExploreExplain,1 探险任务是唯一获得公会经验的途径。\n2 探险任务必须经过公会成员们的投票；\n3 投票开始，则探险任务进入倒计时，时间结束，自动开启投票数最高的探险任务；\n4 若某一探险任务的投票数已达到设定的保底票数，则会长有权提前开始探险任务；\n5 探险任务未开始前，成员们都可以选择改投；\n6 成员们需要根据探险任务当前步骤所需的资源进行贡献，同时消耗体力，增加步骤完成度；\n7 当所有步骤都完成后，进行探险任务的奖励结算，有贡献的成员才会有奖励获得；\n8 若探险任务进行中，退出公会的成员，是无法获得奖励的；
+TipVote,快来投下第一票
+TipClickVote,点击投票查看探险内容
+VoteInfo,票数 {cur}/{total}
+ExploreVoteInfo,总投票数/公会人数： {vote_count}/{player_count}
+TimeOfExploreStart,探险开始时间
+EndTimeOfGuildBattle,活动剩余时间
+GuildBattleExplain,1.公会战会于每周一上午进行结算；\n\n2.根据公会战的积分进行公会排名，排名越高奖励越丰富；\n\n3.奖励会发送至各位成员的邮箱，注意查收；\n\n4.可以主动索敌、复仇，也可以对公会营地进行阵容防卫，当营地HP不满时，可进行修补；\n\n----------------------------------\n\n小tips：\n\n1.营地HP、防卫阵容，不会随公会等级的提升而提升，只能通过修补才能恢复；\n\n2.只有公会营地防卫阵容为空，才能够攻击营地HP；\n\n3.当公会战中被击败时，是不会影响到化身当前的HP的；
+Defense,防卫
+Unload,卸下
+NoAllowAction,不允许行动
+composequality_desc,品质修炼所：品质越高的佣兵，作为消耗获得的经验越多
+composexp_desc,经验修炼所：等级越高，品质越高的佣兵作为消耗，获得的经验越多
+composeskill_desc,必杀修炼所：拥有相同必杀技的佣兵才能作为消耗
+BattleDesc,出战佣兵的特长，有几率在战斗中获得经验升级
+RankingDesc_BattlePower,战斗力排行按照玩家当前拥有的所有佣兵的战斗力总来计算
+RankingDesc_Gold,财富排行按玩家目前拥有的金币总额来计算
+RelationDesc,在战斗阵营中使用有羁绊的佣兵组合上阵，可以获得一定的属性提升效果
+#楼层和佣兵解释
+FloorDescForTraining,佣兵品质越高锻炼耗时越久
+CurProfit,当前收益:{cur}/{time}
+CurAttribute,{attribute}:{cur}/{max}
+BeckonDesc,召唤大厅需要消耗佣兵的专属道具，50%的成功概率，失败可能什么都不能获得

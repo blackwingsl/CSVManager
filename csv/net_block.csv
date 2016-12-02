@@ -1,0 +1,16 @@
+#!openId,mapping,tip
+MsgPlayerLoginRequest,MsgPlayerLoginFailed|MsgPlayerLoginSuccess,
+MsgModifyPositionRequest,MsgModifyPositionSuccess|MsgModifyPositionFailed,
+MsgModifyPositionBatchRequest,MsgModifyPositionBatchFailed|MsgModifyPositionBatchSuccess,
+MsgHarvestRequest,MsgHarvestSuccess|MsgHarvestFailed,
+MsgBattleStartRequest,MsgBattleStartFailed|MsgBattleStartSuccess,
+MsgGuildListRequest,MsgGuildListRequestFailed|MsgGuildListRequestSuccess,
+MsgGuildPKRequest,MsgGuildPKSuccess|MsgGuildPKFailed,
+MsgBurstRequest,MsgBurstSuccess|MsgBurstFailed,
+AnySDKUI,AnySDKUI,
+AdsBlock,AdsBlock,
+PurchaseUIBlock,PurchaseUIBlock,
+MsgItemSellRequest,MsgItemSellSuccess|MsgItemSellFailed,正在出售道具...
+MsgIntoWorldBoss,MsgIntoWorldBoss,正在请求进入世界BOSS战场...
+MsgBattleFinishRequest,MsgBattleFinishSuccess|MsgBattleFinishFailed,
+MsgSetSelfAvatarRequest,MsgSetSelfAvatarSuccess|MsgSetSelfAvatarFailed,
