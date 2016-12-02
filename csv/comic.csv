@@ -1,8 +1,0 @@
-#引导漫画表,,,
-#编号,动画名称,"资源(使用""|""分割序列动画)",描述
-#!id,name,resource,desc
-#@int,string,string,string
-1,AVATAR_GUIDE_COMIC,化身1|化身2,化身引导小漫画
-2,FRIEND_GUIDE_COMIC,化身1|化身2,好友化身引导小漫画
-3,WORLD_KONWLEDGE_PLOT,漫画1|漫画2 缺失|漫画3|漫画4|漫画5|漫画6|漫画7|漫画8|漫画9,世界观小漫画
-4,LOST_COMIC,漫画2,世界观缺失小动漫

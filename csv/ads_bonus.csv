@@ -1,7 +1,0 @@
-#广告奖励,,,,,
-#id,名称,奖励,冷却时间(秒),免冷却次数,看广告参数
-#!id,name,bonus,cold_time,nocold_count,free_count_param
-#int,string,string,int,int,int
-1,送钻石,2:0:3:10000,7200,,
-2,送体力,12:0:12:10000,7200,,
-3,送金币,1:0:1000:10000,7200,2,FirstAdsGoldNotify
