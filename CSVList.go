@@ -56,12 +56,7 @@ func (list *CSVList) GetValue(csvName, keyFiledName, keyFiledValue, needField st
 		return "", false
 	}
 
-	n, nResult := csv.GetN(needField)
-	if !nResult {
-		return "", false
-	}
-
-	return content.GetValue(n)
+	return content.GetValue(needField)
 }
 
 // GetCSV ...
