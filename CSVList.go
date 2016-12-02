@@ -1,7 +1,6 @@
 package CSVManager
 
 import (
-	"fmt"
 	"io/ioutil"
 	"path"
 	"strings"
@@ -34,13 +33,12 @@ func (list *CSVList) Update(pathAndFilename string) error {
 
 	// 检查是否已存在同名csv
 	n, isExist := list.isExist(filename)
+	csvContent := new(CSVContent)
 	if isExist { // 如果存在，则更新CSVList里的内容
-		fmt.Println("csv Exist:", n)
+		list.CSVs[n] = csvContent.New(filename, file)
 	} else { // 如果不存在，则创建新的CSVContent，并加入CSVList
-		csvContent := new(CSVContent)
 		content := csvContent.New(filename, file)
 		list.CSVs = append(list.CSVs, content)
-		fmt.Println("run here")
 	}
 
 	return nil
