@@ -2,6 +2,7 @@ package CSVManager
 
 import (
 	"bytes"
+	"fmt"
 	"strings"
 )
 
@@ -19,10 +20,16 @@ func (c *CSVContent) New(name string, file []byte) CSVContent {
 	content.Key = []string{}
 	content.Lines = []CSVLine{}
 	lines := bytes.Split(file, []byte{'\r', '\n'})
+	keySet := false
 	for _, v := range lines {
+		if len(v) <= 0 {
+			fmt.Println("noLine:", name)
+			continue
+		}
 		if v[0] == '#' { // 注释行
-			if v[1] == '!' { // 标题行
+			if v[1] == '!' && !keySet { // 标题行
 				content.Key = strings.Split(string(v[2:]), ",")
+				keySet = true
 			}
 			continue
 		}
