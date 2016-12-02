@@ -14,8 +14,8 @@ type CSVList struct {
 
 // isExist check if the csv already in CSVs
 // return the position(int) in array and isExist(bool)
-func (l *CSVList) isExist(name string) (int, bool) {
-	for k, v := range l.CSVs {
+func (list *CSVList) isExist(name string) (int, bool) {
+	for k, v := range list.CSVs {
 		if v.Name == name {
 			return k, true
 		}
@@ -24,7 +24,7 @@ func (l *CSVList) isExist(name string) (int, bool) {
 }
 
 // Update target CSV
-func (l *CSVList) Update(pathAndFilename string) error {
+func (list *CSVList) Update(pathAndFilename string) error {
 	filename := strings.Split(path.Base(pathAndFilename), ".")[0]
 
 	file, e := ioutil.ReadFile(pathAndFilename)
@@ -33,14 +33,45 @@ func (l *CSVList) Update(pathAndFilename string) error {
 	}
 
 	// 检查是否已存在同名csv
-	n, isExist := l.isExist(filename)
+	n, isExist := list.isExist(filename)
 	if isExist { // 如果存在，则更新CSVList里的内容
 		fmt.Println("csv Exist:", n)
 	} else { // 如果不存在，则创建新的CSVContent，并加入CSVList
 		csvContent := new(CSVContent)
 		content := csvContent.New(filename, file)
-		l.CSVs = append(l.CSVs, content)
+		list.CSVs = append(list.CSVs, content)
+		fmt.Println("run here")
 	}
-	fmt.Println(l.CSVs)
+
 	return nil
+}
+
+// GetValue ...
+func (list *CSVList) GetValue(csvName, keyFiledName, keyFiledValue, needField string) (string, bool) {
+	csv, result := list.GetCSV(csvName)
+	if !result {
+		return "", false
+	}
+
+	content, contentResult := csv.GetContent(keyFiledName, keyFiledValue)
+	if !contentResult {
+		return "", false
+	}
+
+	n, nResult := csv.GetN(needField)
+	if !nResult {
+		return "", false
+	}
+
+	return content.GetValue(n)
+}
+
+// GetCSV ...
+func (list *CSVList) GetCSV(csvName string) (CSVContent, bool) {
+	for _, v := range list.CSVs {
+		if v.Name == csvName {
+			return v, true
+		}
+	}
+	return CSVContent{}, false
 }
