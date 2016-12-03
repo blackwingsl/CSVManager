@@ -18,7 +18,6 @@ func (line *CSVLine) Get(key string) (string, bool) {
 	n, result := line.Key.GetN(key)
 	if !result {
 		return "", false
-
 	}
 
 	return line.Values[n], true

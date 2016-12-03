@@ -45,7 +45,6 @@ func (list *CSVList) Gets(csvName, keyFiledName, keyFiledValue, needField string
 
 	values := []string{}
 	for _, v := range lines {
-
 		value, result := v.Get(needField)
 		if result {
 			values = append(values, value)
