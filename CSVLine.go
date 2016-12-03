@@ -16,9 +16,10 @@ func (line *CSVLine) New(b []byte) CSVLine {
 // Get ...
 func (line *CSVLine) Get(key string) (string, bool) {
 	n, result := line.Key.GetN(key)
-	if result {
-		return line.Values[n], true
+	if !result {
+		return "", false
+
 	}
 
-	return "", false
+	return line.Values[n], true
 }

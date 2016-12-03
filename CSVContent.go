@@ -61,3 +61,20 @@ func (content *CSVContent) Get(key, value string) (CSVLine, bool) {
 
 	return CSVLine{}, false
 }
+
+// Gets return multip line
+func (content *CSVContent) Gets(key,value string ) ([]CSVLine,bool) {
+	n, result := content.Key.GetN(key)
+	if !result {
+		return []CSVLine{}, false
+	}
+
+	lines := []CSVLine{}
+	for _,v := range content.Lines {
+		if v.Values[n] == value {
+			lines = append(lines,v)
+		}
+	}
+
+	return lines,false
+}

@@ -11,7 +11,7 @@ type CSVList struct {
 	CSVs []CSVContent
 }
 
-// Get ...
+// Get return only one line
 func (list *CSVList) Get(csvName, keyFiledName, keyFiledValue, needField string) (string, bool) {
 	content, result := list.GetCSV(csvName) //  读表
 	if !result {
@@ -29,6 +29,29 @@ func (list *CSVList) Get(csvName, keyFiledName, keyFiledValue, needField string)
 	}
 
 	return value, true
+}
+
+// Gets return multi line
+func (list *CSVList) Gets(csvName, keyFiledName, keyFiledValue, needField string) ([]string, bool) {
+	content, result := list.GetCSV(csvName) //  读表
+	if !result {
+		return []string{},false
+	}
+
+	lines, result := content.Gets(keyFiledName, keyFiledValue)
+	if !result {
+		return []string{},false
+	}
+
+	values := []string{}
+	for _,v := range lines {
+		value, result := v.Get(needField)
+		if result {
+			values = append(values,value)
+		}
+	}
+
+	return values,true
 }
 
 // GetCSV ...
