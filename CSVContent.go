@@ -2,73 +2,58 @@ package CSVManager
 
 import (
 	"bytes"
-	"fmt"
 	"strings"
 )
 
 // CSVContent ...
 type CSVContent struct {
 	Name  string
-	Key   *Keys
+	Key   *CSVKeys // 标题行
 	Lines []CSVLine
 }
 
 // New create new CSVContent
-func (c *CSVContent) New(name string, file []byte) CSVContent {
-	content := CSVContent{}
-	content.Name = name
-	key := new(Keys)
+func (content *CSVContent) New(name string, file []byte) CSVContent {
+	// init content
+	contentRead := CSVContent{}
 	content.Lines = []CSVLine{}
+
+	newKey := new(CSVKeys)
+	// parse csv
 	lines := bytes.Split(file, []byte{'\r', '\n'})
-	keySet := false
+	// fmt.Println(lines)
 	for _, v := range lines {
-		if len(v) <= 0 {
-			fmt.Println("noLine:", name)
+		if len(v) <= 0 { // 空行过滤
 			continue
 		}
+
 		if v[0] == '#' { // 注释行
-			if v[1] == '!' && !keySet { // 标题行
-				key.Value = strings.Split(string(v[2:]), ",")
-				keySet = true
+			if v[1] == '!' && len(newKey.Value) <= 0 { // 标题行
+				newKey.Value = strings.Split(string(v[2:]), ",")
 			}
 			continue
 		}
-		// 正文截取
-		line := new(CSVLine)
-		content.Key = key
-		content.Lines = append(content.Lines, line.New(v))
+
+		contentRead.Name = name
+		contentRead.Key = newKey
+		line := CSVLine{}
+		line.New(v)
+		line.Key = newKey
+		line.Values = strings.Split(string(v), ",")
+		contentRead.Lines = append(contentRead.Lines, line)
 	}
-	return content
+
+	return contentRead
 }
 
-// GetLineByKV ..
-func (c *CSVContent) GetLineByKV(key, value, needKey string) (string, bool) {
-	n, result := c.Key.GetN(key)
-	if !result {
-		return "", false
-	}
-
-	for _, v := range c.Lines {
-		if v.Values[n] == value {
-			need, needResult := c.Key.GetN(needKey)
-			if needResult {
-				return v.Values[need], true
-			}
-			break
-		}
-	}
-
-	return "", false
-}
-
-// GetContent ...
-func (c *CSVContent) GetContent(key, value string) (CSVLine, bool) {
-	n, result := c.Key.GetN(key)
+// Get ...
+func (content *CSVContent) Get(key, value string) (CSVLine, bool) {
+	n, result := content.Key.GetN(key)
 	if !result {
 		return CSVLine{}, false
 	}
 
-	for _, v := range c.Lines {
+	for _, v := range content.Lines {
 		if v.Values[n] == value {
 			return v, true
 		}

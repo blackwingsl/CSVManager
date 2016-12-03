@@ -4,7 +4,7 @@ import "strings"
 
 // CSVLine ...
 type CSVLine struct {
-	Key *Keys
+	Key    *CSVKeys
 	Values []string
 }
 
@@ -13,13 +13,12 @@ func (line *CSVLine) New(b []byte) CSVLine {
 	return CSVLine{Values: strings.Split(string(b), ",")}
 }
 
-// GetValue ...
-func (line *CSVLine) GetValue(key string) (string ,bool) {
+// Get ...
+func (line *CSVLine) Get(key string) (string, bool) {
 	n, result := line.Key.GetN(key)
 	if result {
 		return line.Values[n], true
 	}
-	
-	return "", false
 
+	return "", false
 }
