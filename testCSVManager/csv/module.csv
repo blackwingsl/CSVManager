@@ -1,0 +1,15 @@
+#模块列表,,,
+#编号,模块标示,是否提示,说明
+#!id,name,notify,desc
+#@int,string,int,string
+1,SHOP,1,商城
+2,AVATAR,1,化身
+3,LOGIN_BONUS,,登陆奖励
+4,GUILD,1,公会
+5,ITEM,1,仓库
+6,LIBRARY,,图书馆
+7,WORLDBOSS,1,世界boss
+8,ARENA,,竞技大厅
+9,SCRATCH_CARD,1,刮刮乐
+10,GUILD_ADVANCE_GUIDE ,,加入工会
+11,ONEKEY_HARVEST,,收益助手

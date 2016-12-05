@@ -1,0 +1,9 @@
+#品质配置表,,,,,,,,,,,,,,
+#品质,进阶所需点数,提供点数,强化基础经验,hp上限(0为无限制),力量上限,敏捷上限,智力上限,魅力上限,过滤标签,外框资源,内框资源,必杀名字框,品质颜色,台座资源
+#!id,point,materialpoint,basexp,hp_max,strength,agile,intelligence,charm,tag,res_recedge,res_bk,res_skill_recedge,color,res_stand
+#int,int,int,int,int,int,int,int,int,int,string,string,,string,string
+1,200,20,2,0,20,20,20,20,Normal,UIImages/QualityBK/new头像外框 lv1,UIImages/QualityBK/new头像内框 lv1,UIImages/QualityBK/必杀名字品质框1,FFFFFFFF,UIImages/QualityBK/台座 白色1
+2,400,50,5,0,40,40,40,40,Rare,UIImages/QualityBK/new头像外框 lv2,UIImages/QualityBK/new头像内框 lv2,UIImages/QualityBK/必杀名字品质框2,A0E47DFF,UIImages/QualityBK/台座 绿色2
+3,800,100,10,0,60,60,60,60,Super,UIImages/QualityBK/new头像外框 lv3,UIImages/QualityBK/new头像内框 lv3,UIImages/QualityBK/必杀名字品质框3,0490FFFF,UIImages/QualityBK/台座 绿色3
+4,1600,200,200,0,80,80,80,80,Ultra,UIImages/QualityBK/new头像外框 lv4,UIImages/QualityBK/new头像内框 lv4,UIImages/QualityBK/必杀名字品质框4,891ECAFF,UIImages/QualityBK/台座 紫色4
+5,,,50,0,100,100,100,100,Legend,UIImages/QualityBK/new头像外框 lv5,UIImages/QualityBK/new头像内框 lv5,UIImages/QualityBK/必杀名字品质框5,E96A05FF,UIImages/QualityBK/台座 橙色5

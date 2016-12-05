@@ -1,0 +1,8 @@
+#职业对照表,,
+#名称,小图标,动作资源名
+#!name,icon,animation
+#@string,string,string
+CLASSIFY_WARRIOR ,UIImages/小职业图标_0003,warrior_SkeletonData
+CLASSIFY_ARCHER ,UIImages/小职业图标_0002,archer_SkeletonData
+CLASSIFY_WITCHER ,UIImages/小职业图标_0000,fashi_SkeletonData
+CLASSIFY_CLERIC ,UIImages/小职业图标_0001,cleric_SkeletonData
