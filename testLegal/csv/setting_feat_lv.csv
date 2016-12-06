@@ -1,0 +1,9 @@
+#特长对照表,
+#等级,图标资源
+#!id,resource
+#@string,string
+1,Images/Icon/LV1
+2,Images/Icon/LV2
+3,Images/Icon/LV3
+4,Images/Icon/LV4
+5,Images/Icon/LV5

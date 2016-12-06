@@ -1,0 +1,424 @@
+#图鉴,,,
+#图鉴配置表,关联配置编号,名称,类型(item=道具，building=建筑，mercenary=佣兵，skill=技能，feat=特长，quest=任务)
+#!id,conn_id,item_name,type
+#@int,int,string,string
+#,,,
+1001,1,讨伐所,building
+1002,2,募兵所,building
+1003,3,魅力锻炼所,building
+1004,4,烤肉店,building
+1005,5,医疗所,building
+1006,6,修炼所,building
+1007,7,特长传授所,building
+1008,8,必杀传授所,building
+1009,9,竞技大厅,building
+1010,10,传说大厅,building
+1011,11,面包店,building
+1012,12,酒屋,building
+1013,13,奶茶店,building
+1014,14,力量锻炼所,building
+1015,15,敏捷锻炼所,building
+1016,16,智力锻炼所,building
+1017,17,高级医疗所,building
+#1018,100,特级奶茶店(纸),building
+#技能,,,
+2001,1,竖劈Lv1,skill
+2002,2,竖劈Lv2,skill
+2003,3,竖劈Lv3,skill
+2004,4,竖劈Lv4,skill
+2005,5,竖劈Lv5,skill
+2006,6,断山岳Lv1,skill
+2007,7,断山岳Lv2,skill
+2008,8,断山岳Lv3,skill
+2009,9,断山岳Lv4,skill
+2010,10,断山岳Lv5,skill
+2011,11,斩云空Lv1,skill
+2012,12,斩云空Lv2,skill
+2013,13,斩云空Lv3,skill
+2014,14,斩云空Lv4,skill
+2015,15,斩云空Lv5,skill
+2016,16,分星辰Lv1,skill
+2017,17,分星辰Lv2,skill
+2018,18,分星辰Lv3,skill
+2019,19,分星辰Lv4,skill
+2020,20,分星辰Lv5,skill
+2021,21,连射Lv1,skill
+2022,22,连射Lv2,skill
+2023,23,连射Lv3,skill
+2024,24,连射Lv4,skill
+2025,25,连射Lv5,skill
+2026,26,多重箭Lv1,skill
+2027,27,多重箭Lv2,skill
+2028,28,多重箭Lv3,skill
+2029,29,多重箭Lv4,skill
+2030,30,多重箭Lv5,skill
+2031,31,箭雨Lv1,skill
+2032,32,箭雨Lv2,skill
+2033,33,箭雨Lv3,skill
+2034,34,箭雨Lv4,skill
+2035,35,箭雨Lv5,skill
+2036,36,利刃风暴Lv1,skill
+2037,37,利刃风暴Lv2,skill
+2038,38,利刃风暴Lv3,skill
+2039,39,利刃风暴Lv4,skill
+2040,40,利刃风暴Lv5,skill
+2041,41,法球Lv1,skill
+2042,42,法球Lv2,skill
+2043,43,法球Lv3,skill
+2044,44,法球Lv4,skill
+2045,45,法球Lv5,skill
+2046,46,破坏Lv1,skill
+2047,47,破坏Lv2,skill
+2048,48,破坏Lv3,skill
+2049,49,破坏Lv4,skill
+2050,50,破坏Lv5,skill
+2051,51,碎裂Lv1,skill
+2052,52,碎裂Lv2,skill
+2053,53,碎裂Lv3,skill
+2054,54,碎裂Lv4,skill
+2055,55,碎裂Lv5,skill
+2056,56,湮灭Lv1,skill
+2057,57,湮灭Lv2,skill
+2058,58,湮灭Lv3,skill
+2059,59,湮灭Lv4,skill
+2060,60,湮灭Lv5,skill
+2061,61,冲击Lv1,skill
+2062,62,冲击Lv2,skill
+2063,63,冲击Lv3,skill
+2064,64,冲击Lv4,skill
+2065,65,冲击Lv5,skill
+2066,66,爆发Lv1,skill
+2067,67,爆发Lv2,skill
+2068,68,爆发Lv3,skill
+2069,69,爆发Lv4,skill
+2070,70,爆发Lv5,skill
+2071,71,能量喷泉Lv1,skill
+2072,72,能量喷泉Lv2,skill
+2073,73,能量喷泉Lv3,skill
+2074,74,能量喷泉Lv4,skill
+2075,75,能量喷泉Lv5,skill
+2076,76,正义冲击Lv1,skill
+2077,77,正义冲击Lv2,skill
+2078,78,正义冲击Lv3,skill
+2079,79,正义冲击Lv4,skill
+2080,80,正义冲击Lv5,skill
+2081,1000,安妮奥义Lv1,skill
+2082,1001,安妮奥义Lv2,skill
+2083,1002,安妮奥义Lv3,skill
+2084,1003,安妮奥义Lv4,skill
+2085,1004,安妮奥义Lv5,skill
+#特性,,,
+3001,1,力量Lv 1,feat
+3002,2,力量Lv 2,feat
+3003,3,力量Lv 3,feat
+3004,4,力量Lv 4,feat
+3005,5,力量Lv 5,feat
+3006,6,敏捷Lv 1,feat
+3007,7,敏捷Lv 2,feat
+3008,8,敏捷Lv 3,feat
+3009,9,敏捷Lv 4,feat
+3010,10,敏捷Lv 5,feat
+3011,11,智力Lv 1,feat
+3012,12,智力Lv 2,feat
+3013,13,智力Lv 3,feat
+3014,14,智力Lv 4,feat
+3015,15,智力Lv 5,feat
+3016,16,魅力Lv 1,feat
+3017,17,魅力Lv 2,feat
+3018,18,魅力Lv 3,feat
+3019,19,魅力Lv 4,feat
+3020,20,魅力Lv 5,feat
+3021,21,杰出力量Lv 1,feat
+3022,22,杰出力量Lv 2,feat
+3023,23,杰出力量Lv 3,feat
+3024,24,杰出力量Lv 4,feat
+3025,25,杰出力量Lv 5,feat
+3026,26,杰出敏捷Lv 1,feat
+3027,27,杰出敏捷Lv 2,feat
+3028,28,杰出敏捷Lv 3,feat
+3029,29,杰出敏捷Lv 4,feat
+3030,30,杰出敏捷Lv 5,feat
+3031,31,杰出智力Lv 1,feat
+3032,32,杰出智力Lv 2,feat
+3033,33,杰出智力Lv 3,feat
+3034,34,杰出智力Lv 4,feat
+3035,35,杰出智力Lv 5,feat
+3036,36,杰出魅力Lv 1,feat
+3037,37,杰出魅力Lv 2,feat
+3038,38,杰出魅力Lv 3,feat
+3039,39,杰出魅力Lv 4,feat
+3040,40,杰出魅力Lv 5,feat
+3041,41,超凡力量Lv 1,feat
+3042,42,超凡力量Lv 2,feat
+3043,43,超凡力量Lv 3,feat
+3044,44,超凡力量Lv 4,feat
+3045,45,超凡力量Lv 5,feat
+3046,46,超凡敏捷Lv 1,feat
+3047,47,超凡敏捷Lv 2,feat
+3048,48,超凡敏捷Lv 3,feat
+3049,49,超凡敏捷Lv 4,feat
+3050,50,超凡敏捷Lv 5,feat
+3051,51,超凡智力Lv 1,feat
+3052,52,超凡智力Lv 2,feat
+3053,53,超凡智力Lv 3,feat
+3054,54,超凡智力Lv 4,feat
+3055,55,超凡智力Lv 5,feat
+3056,56,超凡魅力Lv 1,feat
+3057,57,超凡魅力Lv 2,feat
+3058,58,超凡魅力Lv 3,feat
+3059,59,超凡魅力Lv 4,feat
+3060,60,超凡魅力Lv 5,feat
+3061,61,勤奋Lv 1,feat
+3062,62,勤奋Lv 2,feat
+3063,63,勤奋Lv 3,feat
+3064,64,勤奋Lv 4,feat
+3065,65,勤奋Lv 5,feat
+3066,66,魅惑Lv 1,feat
+3067,67,魅惑Lv 2,feat
+3068,68,魅惑Lv 3,feat
+3069,69,魅惑Lv 4,feat
+3070,70,魅惑Lv 5,feat
+3071,71,学习Lv 1,feat
+3072,72,学习Lv 2,feat
+3073,73,学习Lv 3,feat
+3074,74,学习Lv 4,feat
+3075,75,学习Lv 5,feat
+3076,76,体悟Lv 1,feat
+3077,77,体悟Lv 2,feat
+3078,78,体悟Lv 3,feat
+3079,79,体悟Lv 4,feat
+3080,80,体悟Lv 5,feat
+3081,81,聪明Lv 1,feat
+3082,82,聪明Lv 2,feat
+3083,83,聪明Lv 3,feat
+3084,84,聪明Lv 4,feat
+3085,85,聪明Lv 5,feat
+3086,86,天选者Lv 1,feat
+3087,87,天选者Lv 2,feat
+3088,88,天选者Lv 3,feat
+3089,89,天选者Lv 4,feat
+3090,90,天选者Lv 5,feat
+3091,91,快速回复Lv 1,feat
+3092,92,快速回复Lv 2,feat
+3093,93,快速回复Lv 3,feat
+3094,94,快速回复Lv 4,feat
+3095,95,快速回复Lv 5,feat
+3096,96,蜥蜴体质Lv 1,feat
+3097,97,蜥蜴体质Lv 2,feat
+3098,98,蜥蜴体质Lv 3,feat
+3099,99,蜥蜴体质Lv 4,feat
+3100,100,蜥蜴体质Lv 5,feat
+3101,101,吸血Lv 1,feat
+3102,102,吸血Lv 2,feat
+3103,103,吸血Lv 3,feat
+3104,104,吸血Lv 4,feat
+3105,105,吸血Lv 5,feat
+3106,106,精力旺盛Lv 1,feat
+3107,107,精力旺盛Lv 2,feat
+3108,108,精力旺盛Lv 3,feat
+3109,109,精力旺盛Lv 4,feat
+3110,110,精力旺盛Lv 5,feat
+3111,111,精确Lv 1,feat
+3112,112,精确Lv 2,feat
+3113,113,精确Lv 3,feat
+3114,114,精确Lv 4,feat
+3115,115,精确Lv 5,feat
+3116,116,闪避大师Lv 1,feat
+3117,117,闪避大师Lv 2,feat
+3118,118,闪避大师Lv 3,feat
+3119,119,闪避大师Lv 4,feat
+3120,120,闪避大师Lv 5,feat
+3121,121,攻击大师Lv 1,feat
+3122,122,攻击大师Lv 2,feat
+3123,123,攻击大师Lv 3,feat
+3124,124,攻击大师Lv 4,feat
+3125,125,攻击大师Lv 5,feat
+3126,126,防御大师Lv 1,feat
+3127,127,防御大师Lv 2,feat
+3128,128,防御大师Lv 3,feat
+3129,129,防御大师Lv 4,feat
+3130,130,防御大师Lv 5,feat
+3131,131,致命攻击Lv 1,feat
+3132,132,致命攻击Lv 2,feat
+3133,133,致命攻击Lv 3,feat
+3134,134,致命攻击Lv 4,feat
+3135,135,致命攻击Lv 5,feat
+3136,136,战术大师Lv 1,feat
+3137,137,战术大师Lv 2,feat
+3138,138,战术大师Lv 3,feat
+3139,139,战术大师Lv 4,feat
+3140,140,战术大师Lv 5,feat
+3141,141,残酷攻击Lv 1,feat
+3142,142,残酷攻击Lv 2,feat
+3143,143,残酷攻击Lv 3,feat
+3144,144,残酷攻击Lv 4,feat
+3145,145,残酷攻击Lv 5,feat
+3146,146,至高打击Lv 1,feat
+3147,147,至高打击Lv 2,feat
+3148,148,至高打击Lv 3,feat
+3149,149,至高打击Lv 4,feat
+3150,150,至高打击Lv 5,feat
+3151,151,战术配合Lv 1,feat
+3152,152,战术配合Lv 2,feat
+3153,153,战术配合Lv 3,feat
+3154,154,战术配合Lv 4,feat
+3155,155,战术配合Lv 5,feat
+3156,156,联合打击Lv 1,feat
+3157,157,联合打击Lv 2,feat
+3158,158,联合打击Lv 3,feat
+3159,159,联合打击Lv 4,feat
+3160,160,联合打击Lv 5,feat
+3161,161,战机捕捉Lv 1,feat
+3162,162,战机捕捉Lv 2,feat
+3163,163,战机捕捉Lv 3,feat
+3164,164,战机捕捉Lv 4,feat
+3165,165,战机捕捉Lv 5,feat
+3166,166,天神下凡Lv 1,feat
+3167,167,天神下凡Lv 2,feat
+3168,168,天神下凡Lv 3,feat
+3169,169,天神下凡Lv 4,feat
+3170,170,天神下凡Lv 5,feat
+3171,171,苦力Lv 1,feat
+3172,172,苦力Lv 2,feat
+3173,173,苦力Lv 3,feat
+3174,174,苦力Lv 4,feat
+3175,175,苦力Lv 5,feat
+3176,176,勤快Lv 1,feat
+3177,177,勤快Lv 2,feat
+3178,178,勤快Lv 3,feat
+3179,179,勤快Lv 4,feat
+3180,180,勤快Lv 5,feat
+3181,181,思考Lv 1,feat
+3182,182,思考Lv 2,feat
+3183,183,思考Lv 3,feat
+3184,184,思考Lv 4,feat
+3185,185,思考Lv 5,feat
+3186,186,殷勤Lv 1,feat
+3187,187,殷勤Lv 2,feat
+3188,188,殷勤Lv 3,feat
+3189,189,殷勤Lv 4,feat
+3190,190,殷勤Lv 5,feat
+3191,191,富豪Lv 1,feat
+3192,192,富豪Lv 2,feat
+3193,193,富豪Lv 3,feat
+3194,194,富豪Lv 4,feat
+3195,195,富豪Lv 5,feat
+3196,196,节约Lv 1,feat
+3197,197,节约Lv 2,feat
+3198,198,节约Lv 3,feat
+3199,199,节约Lv 4,feat
+3200,200,节约Lv 5,feat
+3201,201,拾荒Lv 1,feat
+3202,202,拾荒Lv 2,feat
+3203,203,拾荒Lv 3,feat
+3204,204,拾荒Lv 4,feat
+3205,205,拾荒Lv 5,feat
+3206,206,幻想御手1,feat
+3207,207,幻想御手2,feat
+3208,208,幻想御手3,feat
+3209,209,幻想御手4,feat
+3210,210,力量Lv 1,feat
+3211,211,力量Lv 5,feat
+3212,212,敏捷Lv 1,feat
+3213,213,敏捷Lv 5,feat
+3214,214,智力Lv 1,feat
+3215,215,智力Lv 5,feat
+3216,216,魅力Lv 1,feat
+3217,217,魅力Lv 5,feat
+3218,218,力量Lv 2,feat
+3219,219,力量Lv 5,feat
+3220,220,敏捷Lv 1,feat
+3221,221,敏捷Lv 5,feat
+3222,222,智力Lv 1,feat
+3223,223,智力Lv 5,feat
+3224,224,魅力Lv 1,feat
+3225,225,魅力Lv 5,feat
+3226,226,力量Lv 2,feat
+3227,227,力量Lv 5,feat
+3228,228,敏捷Lv 1,feat
+3229,229,敏捷Lv 5,feat
+3230,230,智力Lv 1,feat
+3231,231,智力Lv 5,feat
+3232,232,魅力Lv 1,feat
+3233,233,魅力Lv 5,feat
+3234,234,力量Lv 2,feat
+3235,235,力量Lv 5,feat
+3236,236,敏捷Lv 1,feat
+3237,237,敏捷Lv 5,feat
+3238,238,智力Lv 1,feat
+3239,239,智力Lv 5,feat
+3240,240,魅力Lv 1,feat
+3241,241,魅力Lv 5,feat
+3242,242,力量Lv 2,feat
+3243,243,力量Lv 5,feat
+3244,244,敏捷Lv 1,feat
+3245,245,敏捷Lv 5,feat
+3246,246,智力Lv 1,feat
+3247,247,智力Lv 5,feat
+3248,248,魅力Lv 1,feat
+3249,249,魅力Lv 5,feat
+3250,250,力量Lv 2,feat
+3251,251,力量Lv 5,feat
+3252,252,敏捷Lv 1,feat
+3253,253,敏捷Lv 5,feat
+3254,254,智力Lv 1,feat
+3255,255,智力Lv 5,feat
+3256,256,魅力Lv 1,feat
+3257,257,魅力Lv 5,feat
+3258,258,力量Lv 2,feat
+3259,259,力量Lv 5,feat
+3260,260,敏捷Lv 1,feat
+3261,261,敏捷Lv 5,feat
+3262,262,智力Lv 1,feat
+3263,263,智力Lv 5,feat
+3264,264,魅力Lv 1,feat
+3265,265,魅力Lv 5,feat
+3266,266,力量Lv 2,feat
+3267,267,力量Lv 5,feat
+3268,268,敏捷Lv 1,feat
+3269,269,敏捷Lv 5,feat
+3270,270,智力Lv 1,feat
+3271,271,智力Lv 5,feat
+3272,272,魅力Lv 1,feat
+3273,273,魅力Lv 5,feat
+3274,274,力量Lv 2,feat
+3275,275,力量Lv 5,feat
+3276,276,敏捷Lv 1,feat
+3277,277,敏捷Lv 5,feat
+3278,278,智力Lv 1,feat
+3279,279,智力Lv 5,feat
+3280,280,魅力Lv 1,feat
+3281,281,魅力Lv 5,feat
+3282,282,精确Lv 1,feat
+3283,283,闪避大师Lv 1,feat
+3284,284,攻击大师Lv 1,feat
+3285,285,防御大师Lv 1,feat
+3286,286,致命攻击Lv 1,feat
+3287,287,残酷攻击Lv 1,feat
+3288,288,战术大师Lv 1,feat
+3289,289,至高打击Lv 1,feat
+#1,1,法师之证Lv1,item
+#2,2,法师之证Lv2,item
+#3,3,法师之证Lv3,item
+#4,4,法师之证Lv4,item
+#5,5,法师之证Lv5,item
+#6,6,主教之证Lv1,item
+#7,7,主教之证Lv2,item
+#8,8,主教之证Lv3,item
+#9,9,主教之证Lv4,item
+#10,10,主教之证Lv5,item
+#11,11,游侠之证Lv1,item
+#12,12,游侠之证Lv2,item
+#13,13,游侠之证Lv3,item
+#14,14,游侠之证Lv4,item
+#15,15,游侠之证Lv5,item
+#16,16,战士之证Lv1,item
+#17,17,战士之证Lv2,item
+#18,18,战士之证Lv3,item
+#19,19,战士之证Lv4,item
+#20,20,战士之证Lv5,item
+#21,21,冒险之证Lv1,item
+#22,22,冒险之证Lv2,item
+#23,23,冒险之证Lv3,item
+#24,24,冒险之证Lv4,item
+#25,25,冒险之证Lv5,item
