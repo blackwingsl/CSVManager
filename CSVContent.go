@@ -21,10 +21,17 @@ func (content *CSVContent) New(name string, file []byte) CSVContent {
 	newKey := new(CSVKeys)
 	// parse csv
 	lines := bytes.Split(file, []byte{'\r', '\n'})
-	// fmt.Println(lines)
 	for _, v := range lines {
 		if len(v) <= 0 { // 空行过滤
 			continue
+		}
+
+		if v[len(v)-1] == '\n' { // 去除尾部换行符
+			v = v[:len(v)-2]
+		}
+
+		if v[0] == '\n' { //去除头部换行符
+			v = v[1:]
 		}
 
 		if v[0] == '#' { // 注释行
