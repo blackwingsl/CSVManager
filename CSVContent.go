@@ -20,7 +20,7 @@ func (content *CSVContent) New(name string, file []byte) CSVContent {
 
 	newKey := new(CSVKeys)
 	// parse csv
-	lines := bytes.Split(file, []byte{'\r', '\n'})
+	lines := bytes.Split(file, []byte{'\n','\r'})
 	for _, v := range lines {
 		if len(v) <= 0 { // 空行过滤
 			continue
