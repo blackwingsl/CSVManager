@@ -20,18 +20,14 @@ func (content *CSVContent) New(name string, file []byte) CSVContent {
 
 	newKey := new(CSVKeys)
 	// parse csv
-	lines := bytes.Split(file, []byte{'\r','\n'})
+	lines := bytes.Split(file, []byte{'\n'})
 	for _, v := range lines {
 		if len(v) <= 0 { // 空行过滤
 			continue
 		}
 
-		if v[len(v)-1] == '\r' || v[len(v)-1] == '\n' { // 去除尾部\r
-			v = v[:len(v)-2]
-		}
-
-		if v[0] == '\r' || v[0] == '\n' { //去除头部\r
-			v = v[1:]
+		if v[len(v)-1] == '\r' { // 去除尾部\r
+			v = v[:len(v)-1]
 		}
 
 		if v[0] == '#' { // 注释行
