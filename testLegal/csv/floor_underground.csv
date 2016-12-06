@@ -1,7 +1,0 @@
-#地下楼层,,,,,,,,,,,,,
-#编号,是否隐藏,楼层名称,模块编号,描述,背景图,按钮1类型,按钮1编号,按钮2类型,按钮2编号,按钮3类型,按钮3编号,按钮4类型,按钮4编号
-#!id,hide,name,module_id,desc,img,item1_type,item1_id,item2_type,item2_id,item3_type,item3_id,item4_type,item4_id
-#int,int,string,int,string,string,string,int,string,int,string,int,string,int
-1,,世界boss,7,,Images/FloorBackground/地下楼层S,ITEM_WORLDBOSS,1,ITEM_WORLDBOSS,2,ITEM_WORLDBOSS,3,ITEM_EMPTY,
-2,1,修炼所,,,Images/FloorBackground/品质突破s,ITEM_PROJECT,3,ITEM_PROJECT,4,ITEM_PROJECT,5,,
-3,,刮刮乐,9,,Images/FloorBackground/地下楼层S,ITEM_LOTTERY,1001,ITEM_LOTTERY,1002,ITEM_EMPTY,,ITEM_EMPTY,

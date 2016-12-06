@@ -1,7 +1,0 @@
-#图书馆_书籍,,,,,,,
-#编号,名称,底图资源,未解锁时的底图资源,描述,提示描述,书页,收集奖励
-#!id,name,resource,resource_locked,desc,hint_desc,page_list,bonus
-#@int,string,string,string,string,string,string,string
-1,世界之书,Images/QuestBackground/风1,,描绘世界的书,我也不知道从哪里获得呢,1|2|3,1:0:100:10000|4:1001:1:10000
-2,真理之书,Images/QuestBackground/开花1,,揭示真理的书,我也不知道从哪里获得呢,4|5|6|7,1:0:100:10000|4:1001:1:10000
-3,根源之书,Images/QuestBackground/开花2,,通往根源的书,我也不知道从哪里获得呢,8,1:0:100:10000|4:1001:1:10000

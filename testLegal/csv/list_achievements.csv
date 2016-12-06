@@ -1,7 +1,0 @@
-#成就,,,,,,
-#成就配置表,名称,collection_id1,collection_id2,collection_id3,collection_id4,奖励
-#!id,name,collection1,collection2,collection3,collection4,bonus
-#@int,string,int,int,int,int,string
-1,测试1,1,,,,1::100:
-2,测试2,1,2,,,2::10:
-3,测试3,1,2,3,4,2::20:

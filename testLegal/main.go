@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("检测CSV读取合法性")
 	csvManager := new(CSVManager.CSVManager)
 
-	dirList, e := ioutil.ReadDir("./csv/")
+	dirList, e := ioutil.ReadDir("../csv/")
 	if e != nil {
 		fmt.Println("read dir error")
 		return
@@ -20,7 +20,7 @@ func main() {
 
 	count := 0
 	for _, v := range dirList {
-		e := csvManager.Load("./csv/" + v.Name())
+		e := csvManager.Load("../csv/" + v.Name())
 		if e != nil {
 			fmt.Println(e)
 		}

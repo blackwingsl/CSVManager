@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	"../../CSVManager"
+	"github.com/faint/CSVManager"
 )
 
 func main() {
 	fmt.Println("CSVManager Start...")
 
 	csvManager := new(CSVManager.CSVManager)
-	csvManager.Load("csv/params.csv")
+	csvManager.Load("../csv/params.csv")
 
   // fmt.Println(csvManager.List.CSVs)
 	v, f := csvManager.List.Get("params", "name", "BattleConfiguration", "desc")

@@ -1,5 +1,0 @@
-#公会战配置,,,,,,,,,,,,,,,,,,,
-#编号,开始时间(yyyyMMddhhmm),持续时间(分),活动周期(分),行动冷却时间(秒),行动消耗,恢复1点hp消耗金币,恢复hp万分比,击溃防御者积分,击破基地积分,防御被击破积分,基地被击破积分,排名奖励,积分奖励,击破营地的提示,被击破提示,击破守卫的提示,守卫被击破提示,修复提示,破损提示
-#!id,start_time,last_time,cycle_time,act_cold_time,act_cost,heal_cost,heal_percent,def_over_score,base_over_score,def_defeated_score,base_defeated_score,rank_bonus_list,score_bonus_list,base_broken_tip,base_defeated_tip,def_broken_tip,def_defeated_tip,heal_tip,base_hit_tip
-#@int,int,int,int,int,string,string,int,int,int,int,int,string,string,string,string,string,string,string,string
-1,201609261400,10800,10800,10,12:0:2:10000,10,100,1,10,-1,-5,1|2|3|4|5|6|7|8|9,1|2|3|4|5|6|7,|atkname|击破|defguild|公会的营地啦！,营地被|atkguild|公会的|atkname|击破啦！,|atkname|击破|defguild|公会的守卫|defname|啦！,|defname|被|atkguild|公会的|atkname|击溃啦！,|defname|对营地进行了补修！,营地被|atkguild|公会的|atkname|攻击，造成了|dmg|的损害
