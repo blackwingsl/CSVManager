@@ -26,11 +26,11 @@ func (content *CSVContent) New(name string, file []byte) CSVContent {
 			continue
 		}
 
-		if v[len(v)-1] == '\n' { // 去除尾部换行符
+		if v[len(v)-1] == '\r' { // 去除尾部\r
 			v = v[:len(v)-2]
 		}
 
-		if v[0] == '\n' { //去除头部换行符
+		if v[0] == '\r' { //去除头部\r
 			v = v[1:]
 		}
 
